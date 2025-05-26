@@ -1,5 +1,6 @@
 package dev.dogie.genomes_and_gears;
 
+import net.minecraft.resources.ResourceLocation;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
