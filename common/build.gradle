@@ -16,11 +16,21 @@ neoForge {
     }
 }
 
+repositories {
+    maven { url = "https://maven.createmod.net" } // Create, Ponder, Flywheel
+    maven { url = "https://mvn.devos.one/snapshots" } // Registrate
+    maven { url = "https://raw.githubusercontent.com/Fuzss/modresources/main/maven/" } // ForgeConfigAPIPort
+}
+
 dependencies {
     compileOnly group: 'org.spongepowered', name: 'mixin', version: '0.8.5'
     // fabric and neoforge both bundle mixinextras, so it is safe to use it in common
     compileOnly group: 'io.github.llamalad7', name: 'mixinextras-common', version: '0.3.5'
     annotationProcessor group: 'io.github.llamalad7', name: 'mixinextras-common', version: '0.3.5'
+    implementation("net.createmod.ponder:Ponder-Common-${minecraft_version}:${ponder_version}")
+    compileOnly("dev.engine-room.flywheel:flywheel-common-mojmap-api-${minecraft_version}:${flywheel_version}")
+//    compileOnly("dev.engine-room.flywheel:flywheel-common-${minecraft_version}:${flywheel_version}")
+//    implementation("com.tterrag.registrate:Registrate:${registrate_version}")
 }
 
 configurations {
