@@ -1,6 +1,6 @@
-package dev.dogie.examplemod.mixin;
+package dev.dogie.genomes_and_gears.mixin;
 
-import dev.dogie.examplemod.Constants;
+import dev.dogie.genomes_and_gears.Constants;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.screens.TitleScreen;
 import org.spongepowered.asm.mixin.Mixin;

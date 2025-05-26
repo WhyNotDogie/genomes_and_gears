@@ -1,7 +1,7 @@
-package dev.dogie.examplemod.platform;
+package dev.dogie.genomes_and_gears.platform;
 
-import dev.dogie.examplemod.Constants;
-import dev.dogie.examplemod.platform.services.IPlatformHelper;
+import dev.dogie.genomes_and_gears.Constants;
+import dev.dogie.genomes_and_gears.platform.services.IPlatformHelper;
 
 import java.util.ServiceLoader;
 

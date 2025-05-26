@@ -1,4 +1,4 @@
-package dev.dogie.examplemod.platform.services;
+package dev.dogie.genomes_and_gears.platform.services;
 
 public interface IPlatformHelper {
 

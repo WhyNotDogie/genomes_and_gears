@@ -1,6 +1,6 @@
-package dev.dogie.examplemod.platform;
+package dev.dogie.genomes_and_gears.platform;
 
-import dev.dogie.examplemod.platform.services.IPlatformHelper;
+import dev.dogie.genomes_and_gears.platform.services.IPlatformHelper;
 import net.neoforged.fml.ModList;
 import net.neoforged.fml.loading.FMLLoader;
 

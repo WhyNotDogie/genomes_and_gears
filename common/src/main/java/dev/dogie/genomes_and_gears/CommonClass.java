@@ -1,6 +1,6 @@
-package dev.dogie.examplemod;
+package dev.dogie.genomes_and_gears;
 
-import dev.dogie.examplemod.platform.Services;
+import dev.dogie.genomes_and_gears.platform.Services;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.world.item.Items;
 
@@ -24,9 +24,9 @@ public class CommonClass {
         // your own abstraction layer. You can learn more about this in our provided services class. In this example
         // we have an interface in the common code and use a loader specific implementation to delegate our call to
         // the platform specific approach.
-        if (Services.PLATFORM.isModLoaded("examplemod")) {
+        if (Services.PLATFORM.isModLoaded("genomes_and_gears")) {
 
-            Constants.LOG.info("Hello to examplemod");
+            Constants.LOG.info("Hello to genomes_and_gears");
         }
         AllItems.register();
     }

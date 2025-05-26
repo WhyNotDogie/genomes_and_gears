@@ -1,4 +1,4 @@
-package dev.dogie.examplemod;
+package dev.dogie.genomes_and_gears;
 
 import com.simibubi.create.foundation.data.CreateRegistrate;
 import com.tterrag.registrate.util.entry.ItemEntry;
