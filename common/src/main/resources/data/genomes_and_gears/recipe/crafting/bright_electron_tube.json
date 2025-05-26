@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "L": {
+      "item": "genomes_and_gears:glowstone_alloy"
+    },
+    "N": {
+      "tag": "c:plates/gold"
+    }
+  },
+  "pattern": [
+    "L",
+    "N"
+  ],
+  "result": {
+    "count": 1,
+    "id": "genomes_and_gears:bright_electron_tube"
+  }
+}

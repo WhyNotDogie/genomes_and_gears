@@ -1,0 +1,18 @@
+{
+  "type": "create:mixing",
+  "heat_requirement": "superheated",
+  "ingredients": [
+    {
+      "tag": "c:dusts/diamond"
+    },
+    {
+      "tag": "c:ingots/steel"
+    }
+  ],
+  "results": [
+    {
+      "count": 1,
+      "id": "genomes_and_gears:stainless_steel_ingot"
+    }
+  ]
+}
