@@ -29,8 +29,9 @@ dependencies {
     annotationProcessor group: 'io.github.llamalad7', name: 'mixinextras-common', version: '0.3.5'
     implementation("net.createmod.ponder:Ponder-Common-${minecraft_version}:${ponder_version}")
     compileOnly("dev.engine-room.flywheel:flywheel-common-mojmap-api-${minecraft_version}:${flywheel_version}")
+    implementation("com.simibubi.create:create-${minecraft_version}:${create_version}:slim") { transitive = false }
 //    compileOnly("dev.engine-room.flywheel:flywheel-common-${minecraft_version}:${flywheel_version}")
-//    implementation("com.tterrag.registrate:Registrate:${registrate_version}")
+    implementation("com.tterrag.registrate:Registrate:${registrate_version}")
 }
 
 configurations {
