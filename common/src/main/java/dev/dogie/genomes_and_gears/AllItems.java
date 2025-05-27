@@ -12,7 +12,9 @@ public class AllItems {
             GLOWSTONE_ALLOY = ingredient("glowstone_alloy"),
             BRIGHT_ELECTRON_TUBE = ingredient("bright_electron_tube"),
             POLISHED_AMETHYST = ingredient("polished_amethyst"),
-            STAINLESS_STEEL_INGOT = ingredient("stainless_steel_ingot");
+            STAINLESS_STEEL_INGOT = ingredient("stainless_steel_ingot"),
+            STAINLESS_STEEL_NUGGET = ingredient("stainless_steel_nugget"),
+            STAINLESS_STEEL_ROD = ingredient("stainless_steel_rod");
 
     private static ItemEntry<Item> ingredient(String name) {
         return REGISTRATE.item(name, Item::new)
