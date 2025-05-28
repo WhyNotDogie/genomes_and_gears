@@ -3,6 +3,7 @@ package dev.dogie.genomes_and_gears;
 import com.simibubi.create.content.processing.sequenced.SequencedAssemblyItem;
 import com.simibubi.create.foundation.data.CreateRegistrate;
 import com.tterrag.registrate.util.entry.ItemEntry;
+import dev.dogie.genomes_and_gears.platform.Services;
 import net.minecraft.world.item.Item;
 
 public class AllItems {

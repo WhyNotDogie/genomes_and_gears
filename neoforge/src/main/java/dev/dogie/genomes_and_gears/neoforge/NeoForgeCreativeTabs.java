@@ -1,5 +1,6 @@
 package dev.dogie.genomes_and_gears.neoforge;
 
+import dev.dogie.genomes_and_gears.AllItems;
 import dev.dogie.genomes_and_gears.Constants;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.CreativeModeTab;
@@ -14,9 +15,19 @@ public class NeoForgeCreativeTabs {
             DeferredRegister.create(Registries.CREATIVE_MODE_TAB, Constants.MOD_ID);
 
     public static final DeferredHolder<CreativeModeTab, CreativeModeTab> MAIN_TAB =
-            TABS.register("main", () -> CreativeModeTab.builder()
+            TABS.register("base", () -> CreativeModeTab.builder()
                     .title(Component.translatable("itemGroup." + Constants.MOD_ID))
-                    .icon(() -> new ItemStack(dev.dogie.genomes_and_gears.AllItems.NEEDLE.get())) // or another icon
+                    .icon(AllItems.NEEDLE::asStack)
+                    .displayItems((parameters, output) -> {
+                        Constants.LOG.info("chat");
+                        output.accept(AllItems.NEEDLE);
+                        output.accept(AllItems.GLOWSTONE_ALLOY);
+                        output.accept(AllItems.BRIGHT_ELECTRON_TUBE);
+                        output.accept(AllItems.POLISHED_AMETHYST);
+                        output.accept(AllItems.STAINLESS_STEEL_INGOT);
+                        output.accept(AllItems.STAINLESS_STEEL_NUGGET);
+                        output.accept(AllItems.STAINLESS_STEEL_ROD);
+                    })
                     .build()
             );
 
