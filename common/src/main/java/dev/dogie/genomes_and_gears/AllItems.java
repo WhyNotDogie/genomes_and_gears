@@ -6,9 +6,9 @@ import com.tterrag.registrate.util.entry.ItemEntry;
 import dev.dogie.genomes_and_gears.platform.Services;
 import net.minecraft.world.item.Item;
 
-public class AllItems {
-    public static final CreateRegistrate REGISTRATE = CreateRegistrate.create(Constants.MOD_ID);
+import static dev.dogie.genomes_and_gears.CommonClass.REGISTRATE;
 
+public class AllItems {
     public static final ItemEntry<Item> NEEDLE = ingredient("needle"),
             GLOWSTONE_ALLOY = ingredient("glowstone_alloy"),
             BRIGHT_ELECTRON_TUBE = ingredient("bright_electron_tube"),
