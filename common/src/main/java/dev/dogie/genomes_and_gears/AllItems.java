@@ -3,6 +3,7 @@ package dev.dogie.genomes_and_gears;
 import com.simibubi.create.content.processing.sequenced.SequencedAssemblyItem;
 import com.tterrag.registrate.util.entry.ItemEntry;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.item.Rarity;
 
 import static dev.dogie.genomes_and_gears.CommonClass.REGISTRATE;
 
@@ -21,8 +22,32 @@ public class AllItems {
             PIG_IRON = ingredient("pig_iron"),
             DIAMOND_DUST = ingredient("diamond_dust");
 
+    // TODO: Add Functionality
+    public static final ItemEntry<Item> SWAB = REGISTRATE.item("swab", Item::new)
+            .properties(p -> p
+                    .stacksTo(1)
+                    .rarity(Rarity.UNCOMMON)
+            )
+            .register();
+
+    // TODO: Add Functionality
+    // TODO: Add 3D Model
+    public static final ItemEntry<Item> SYRINGE = REGISTRATE.item("syringe", Item::new)
+            .properties(p -> p
+                    .stacksTo(1)
+                    .rarity(Rarity.RARE)
+                    .durability(2)
+            )
+            .lang("Syringe")
+            .register();
+
     private static ItemEntry<Item> ingredient(String name) {
+        return ingredient(name, new Item.Properties());
+    }
+
+    private static ItemEntry<Item> ingredient(String name, Item.Properties prop) {
         return REGISTRATE.item(name, Item::new)
+                .properties(p -> prop)
                 .register();
     }
 

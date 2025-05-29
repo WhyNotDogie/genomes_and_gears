@@ -1,0 +1,6 @@
+{
+  "parent": "item/handheld",
+  "textures": {
+    "layer0": "genomes_and_gears:item/swab"
+  }
+}
