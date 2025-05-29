@@ -18,16 +18,6 @@ public class NeoForgeCreativeTabs {
             TABS.register("base", () -> CreativeModeTab.builder()
                     .title(Component.translatable("itemGroup." + Constants.MOD_ID))
                     .icon(AllItems.NEEDLE::asStack)
-                    .displayItems((parameters, output) -> {
-                        Constants.LOG.info("chat");
-                        output.accept(AllItems.NEEDLE);
-                        output.accept(AllItems.GLOWSTONE_ALLOY);
-                        output.accept(AllItems.BRIGHT_ELECTRON_TUBE);
-                        output.accept(AllItems.POLISHED_AMETHYST);
-                        output.accept(AllItems.STAINLESS_STEEL_INGOT);
-                        output.accept(AllItems.STAINLESS_STEEL_NUGGET);
-                        output.accept(AllItems.STAINLESS_STEEL_ROD);
-                    })
                     .build()
             );
 

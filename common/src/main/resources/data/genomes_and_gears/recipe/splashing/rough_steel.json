@@ -1,0 +1,13 @@
+{
+  "type": "create:splashing",
+  "ingredients": [
+    {
+      "item": "genomes_and_gears:pig_iron"
+    }
+  ],
+  "results": [
+    {
+      "id": "genomes_and_gears:rough_steel"
+    }
+  ]
+}

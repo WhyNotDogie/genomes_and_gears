@@ -1,0 +1,14 @@
+{
+  "type": "create:crushing",
+  "ingredients": [
+    {
+      "item": "minecraft:diamond"
+    }
+  ],
+  "processing_time": 400,
+  "results": [
+    {
+      "item": "genomes_and_gears:diamond_dust"
+    }
+  ]
+}

@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "genomes_and_gears:item/stainless_steel_sheet"
+  }
+}

@@ -2,6 +2,8 @@ package dev.dogie.genomes_and_gears;
 
 
 import dev.dogie.genomes_and_gears.neoforge.NeoForgeCreativeTabs;
+import net.minecraft.resources.ResourceKey;
+import net.minecraft.world.item.CreativeModeTab;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.fml.common.Mod;
 
@@ -14,11 +16,10 @@ public class GenomesAndGears {
         // Use NeoForge to bootstrap the Common mod.
         Constants.LOG.info("Hello NeoForge world!");
 
-        REGISTRATE.setCreativeTab(null);
+        REGISTRATE.defaultCreativeTab(NeoForgeCreativeTabs.MAIN_TAB, "base");
         REGISTRATE.registerEventListeners(eventBus);
 
         CommonClass.init();
-//        Uncomment to watch death and destruction unfold
-//        NeoForgeCreativeTabs.register(eventBus);
+        NeoForgeCreativeTabs.register(eventBus);
     }
 }

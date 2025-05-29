@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:blasting",
+  "category": "misc",
+  "cookingtime": 100,
+  "experience": 0.5,
+  "ingredient": {
+    "item": "genomes_and_gears:rough_steel"
+  },
+  "result": {
+    "count": 1,
+    "id": "genomes_and_gears:steel_ingot"
+  }
+}
