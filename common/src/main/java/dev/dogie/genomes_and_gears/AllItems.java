@@ -41,6 +41,15 @@ public class AllItems {
             .lang("Syringe")
             .register();
 
+    // TODO: Add Functionality
+    public static final ItemEntry<Item> SKETCHBOOK = REGISTRATE.item("sketchbook", Item::new)
+            .properties(p -> p
+                    .stacksTo(1)
+                    .rarity(Rarity.UNCOMMON)
+            )
+            .lang("Sketchbook")
+            .register();
+
     private static ItemEntry<Item> ingredient(String name) {
         return ingredient(name, new Item.Properties());
     }
